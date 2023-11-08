@@ -61,9 +61,9 @@ const Page = () => {
           <div className="font-medium text-[28px] my-4">Work Experience</div>
         </div>
         <div className="w-[60%]">
-          {resume?.work_experience?.map((item: any) => {
+          {resume?.work_experience?.map((item: any, index: number) => {
             return (
-              <div className="flex flex-1 my-6">
+              <div className="flex flex-1 my-6" key={index}>
                 <div className="w-[30%] font-light">
                   {dayjs(item?.start_date).format("MMM, YYYY") +
                     " - " +
@@ -88,9 +88,9 @@ const Page = () => {
           <div className="font-medium text-[28px] my-4">Education</div>
         </div>
         <div className="w-[60%]">
-          {resume?.education?.map((item: any) => {
+          {resume?.education?.map((item: any, index: number) => {
             return (
-              <div className="flex flex-1 my-6">
+              <div className="flex flex-1 my-6" key={index}>
                 <div className="w-[30%] font-light">
                   {!item?.in_progress
                     ? dayjs(item?.start_date).format("MMM, YYYY") +
@@ -132,9 +132,9 @@ const Page = () => {
               })}
             </div>
             <div className="w-[70%]">
-              {resume?.skills?.expertise.map((item: any) => {
+              {resume?.skills?.expertise.map((item: any, index: number) => {
                 return (
-                  <div>
+                  <div key={index}>
                     <span>{item?.topic}</span>
                     <Progress
                       percent={item?.rating}

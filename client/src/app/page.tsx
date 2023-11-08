@@ -61,7 +61,7 @@ export default function Home() {
             <div className="font-light mb-8">{about?.about}</div>
             <div className="flex items-center w-full justify-evenly">
               <div
-                className="font-semibold font-sans rounded-full w-[120px] h-[120px] flex items-center justify-center bg-[#b5651d] text-white cursor-pointer hover:shadow-lg transition ease-in-out delay-150 hover:bg-indigo-500 duration-500"
+                className="font-semibold font-sans rounded-full border-[1px] border-black border-solid w-[120px] h-[120px] flex items-center justify-center bg-[#b5651d] text-white cursor-pointer hover:shadow-lg transition ease-in-out delay-150 hover:bg-indigo-500 duration-500"
                 onClick={() => {
                   handleNavigation("/Resume");
                 }}
@@ -69,7 +69,7 @@ export default function Home() {
                 Resume
               </div>
               <div
-                className="font-semibold font-sans rounded-full w-[120px] h-[120px] flex items-center justify-center bg-[#FF3B24] text-white cursor-pointer hover:shadow-lg transition ease-in-out delay-150 hover:bg-pink-500 duration-500"
+                className="font-semibold font-sans rounded-full border-[1px] border-black border-solid w-[120px] h-[120px] flex items-center justify-center bg-[#FF3B24] text-white cursor-pointer hover:shadow-lg transition ease-in-out delay-150 hover:bg-pink-500 duration-500"
                 onClick={() => {
                   handleNavigation("/Projects");
                 }}
@@ -77,7 +77,7 @@ export default function Home() {
                 Projects
               </div>
               <div
-                className="font-semibold font-sans rounded-full w-[120px] h-[120px] flex items-center justify-center bg-[#80D8DA] text-white cursor-pointer hover:shadow-lg transition ease-in-out delay-150 hover:bg-green-500 duration-500"
+                className="font-semibold font-sans rounded-full border-[1px] border-black border-solid w-[120px] h-[120px] flex items-center justify-center bg-[#80D8DA] text-white cursor-pointer hover:shadow-lg transition ease-in-out delay-150 hover:bg-green-500 duration-500"
                 onClick={() => {
                   handleNavigation("/Contact");
                 }}

@@ -1,37 +1,19 @@
 "use client";
 import { Input } from "antd";
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const { TextArea } = Input;
 
-const page = () => {
-  const BASE_URL = "https://3d94bf35-a344-44db-9971-ae31be2d1a86.mock.pstmn.io";
+const Page = () => {
   const [shouldAnimate, setShouldAnimate] = useState(false);
-  const [resume, setResume] = useState<any>();
 
   useEffect(() => {
+    setShouldAnimate(true);
     return () => {
       setShouldAnimate(false);
     };
   }, []);
 
-  const getResume = () => {
-    axios
-      .get(BASE_URL + "/resume")
-      .then((res) => {
-        console.log(res.data, "resume");
-        setResume(res.data);
-        setShouldAnimate(true);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
-  };
-
-  useEffect(() => {
-    getResume();
-  }, []);
   return (
     <div
       className={`w-full flex ${
@@ -83,7 +65,7 @@ const page = () => {
               <TextArea />
             </div>
             <div className="ml-8 w-[30%] ">
-              <div className="w-[80px] h-[80px] flex items-center justify-center bg-blue-300 rounded-full cursor-pointer hover:shadow-lg transition ease-in-out delay-150 hover:bg-indigo-500 hover:text-white duration-500">
+              <div className="w-[80px] h-[80px] flex items-center justify-center bg-blue-300 rounded-full border-[1px] border-black border-solid cursor-pointer hover:shadow-lg transition ease-in-out delay-150 hover:bg-indigo-500 hover:text-white duration-500">
                 Submit
               </div>
             </div>
@@ -94,4 +76,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -14,11 +14,11 @@ const Footer = () => {
       <div className="flex items-center w-[80%] justify-between m-auto pt-6">
         <div>
           <div className="font-semibold mb-1">Phone</div>
-          <div>(+1) 408 210 4147</div>
+          <div className="font-light">(+1) 408 210 4147</div>
         </div>
         <div>
           <div className="font-semibold mb-1">Email</div>
-          <div>sivasaikrishna.nekkalapu@sjsu.edu</div>
+          <div className="font-light">sivasaikrishna.nekkalapu@sjsu.edu</div>
         </div>
         <div>
           <div className="font-semibold mb-1">Follow Me</div>
@@ -31,6 +31,10 @@ const Footer = () => {
               <LinkedinOutlined className="text-[18px] cursor-pointer" />
             </Link>
           </div>
+        </div>
+        <div>
+          <div className="font-semibold mb-1">Developed Using</div>
+          <div className="font-light">Next & Node</div>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer/Footer";
 
-const page = () => {
+const Page = () => {
   const BASE_URL = "https://3d94bf35-a344-44db-9971-ae31be2d1a86.mock.pstmn.io";
   const [shouldAnimate, setShouldAnimate] = useState(false);
   const [projects, setProjects] = useState<any>();
@@ -46,7 +46,7 @@ const page = () => {
         </div>
         {projects?.map((project: any, index: number) => {
           return (
-            <div className="w-full my-8">
+            <div className="w-full my-8" key={index}>
               <div className="flex w-[70%] m-auto">
                 <div className="w-[60%] pr-6">
                   <div className="font-medium text-[28px] my-4">
@@ -72,4 +72,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
