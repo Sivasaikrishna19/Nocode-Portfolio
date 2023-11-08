@@ -1,0 +1,37 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* CSS for the fade-in/fade-out transition */
+.page-enter {
+  opacity: 0;
+}
+
+.page-enter-active {
+  opacity: 1;
+  animation: appear 1.5s ease-in-out forwards; /* Use animation instead of transition for entering */
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: disappear 1.5s ease-in-out; /* Use transition for exiting */
+}
+.divider {
+  margin: -8px;
+}
+.ant-divider-horizontal{
+  margin-top: -16px !important
+}
