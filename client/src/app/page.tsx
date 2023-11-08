@@ -56,7 +56,7 @@ export default function Home() {
 
         <div className="w-[50%] flex">
           <div className="m-auto">
-            <div className="text-[80px] font-sans mb-6">Hello</div>
+            <div className="text-[80px] font-sans mb-6">Hello!</div>
             <div className="text-[24px] font-sans mb-3">A Bit About Me</div>
             <div className="font-light mb-8">{about?.about}</div>
             <div className="flex items-center w-full justify-evenly">
