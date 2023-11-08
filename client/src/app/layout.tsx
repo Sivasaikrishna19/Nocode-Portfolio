@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#F3F3F3]">
+      <body className="bg-[#F3F3F3] w-[100vw]">
         <div className={inter.className} style={{ margin: "-8px" }}>
           <Header />
           <div className="w-[100vw] bg-[#F3F3F3]">
