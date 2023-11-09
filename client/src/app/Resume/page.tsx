@@ -64,7 +64,7 @@ const Page = () => {
           {resume?.work_experience?.map((item: any, index: number) => {
             return (
               <div className="flex flex-1 my-6" key={index}>
-                <div className="w-[30%] font-light">
+                <div className="w-[30%] font-light mr-2 ">
                   {dayjs(item?.start_date).format("MMM, YYYY") +
                     " - " +
                     dayjs(item?.end_date).format("MMM, YYYY")}
@@ -91,7 +91,7 @@ const Page = () => {
           {resume?.education?.map((item: any, index: number) => {
             return (
               <div className="flex flex-1 my-6" key={index}>
-                <div className="w-[30%] font-light">
+                <div className="w-[30%] font-light mr-2">
                   {!item?.in_progress
                     ? dayjs(item?.start_date).format("MMM, YYYY") +
                       " - " +
@@ -123,7 +123,7 @@ const Page = () => {
         </div>
         <div className="w-[60%]">
           <div className="flex flex-1 my-6">
-            <div className="w-[30%] font-light">
+            <div className="mr-2 w-[30%] font-light">
               {resume?.skills?.skills?.map((skill: string, index: number) => {
                 return (
                   skill +
