@@ -21,10 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#F3F3F3] w-[100vw]">
-        <div className={inter.className} style={{ margin: "-8px" }}>
+      <body className="bg-[#F3F3F3]">
+        <div className={inter.className}>
           <Header />
-          <div className="w-[100vw] bg-[#F3F3F3]">
+          <div className="bg-[#F3F3F3]">
             <div className=" m-auto pt-[100px]">{children}</div>
           </div>
           {/* <Footer /> */}
