@@ -11,14 +11,13 @@
   }
 }
 
-/* CSS for the fade-in/fade-out transition */
 .page-enter {
   opacity: 0;
 }
 
 .page-enter-active {
   opacity: 1;
-  animation: appear 1.5s ease-in-out forwards; /* Use animation instead of transition for entering */
+  animation: appear 1.5s ease-in-out forwards; 
 }
 
 .page-exit {
@@ -27,11 +26,26 @@
 
 .page-exit-active {
   opacity: 0;
-  transition: disappear 1.5s ease-in-out; /* Use transition for exiting */
+  transition: disappear 1.5s ease-in-out;
 }
 .divider {
   margin: -8px;
 }
 .ant-divider-horizontal{
   margin-top: -16px !important
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 10.5s;
+  /* animation-timing-function: steps(40, end); */
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
