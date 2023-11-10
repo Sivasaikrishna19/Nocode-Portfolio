@@ -34,7 +34,7 @@ const Header = () => {
             </span>
           </span>{" "}
           <div className="flex items-center ">
-            <div className="text-gray-400 mx-2 text-[18px] ">//</div>
+            <div className="text-gray-400 mx-2 text-[18px] ">{"//"}</div>
             {""}
             <div className="font-sm text-gray-400 text-[18px]">
               Full Stack Developer
