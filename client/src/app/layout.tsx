@@ -21,6 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head></head>
       <body className="bg-[#F3F3F3]">
         <div className={inter.className}>
           <Header />

@@ -23,11 +23,23 @@ const Header = () => {
           0{" "}
         </div>
         <div className="ml-2 flex items-center cursor-pointer">
-          <span onClick={() => handleNavigation("/")}>
-            Siva Sai Krishna Nekkalapu
+          <span
+            onClick={() => handleNavigation("/")}
+            className="flex items-center"
+          >
+            {<div className="text-[20px] mr-[2px]">{"<"}</div>}
+            <span className="text-[20px] font-mono">
+              Siva Sai Krishna Nekkalapu
+              {<span className="text-[20px]">{" />"}</span>}
+            </span>
           </span>{" "}
-          <span className="text-gray-400 mx-2">/</span>{" "}
-          <span className="font-sm text-gray-400">Full Stack Developer</span>
+          <div className="flex items-center ">
+            <div className="text-gray-400 mx-2 text-[18px] ">//</div>
+            {""}
+            <div className="font-sm text-gray-400 text-[18px]">
+              Full Stack Developer
+            </div>
+          </div>
         </div>
       </div>
       <div className="flex items-center justify-center">
