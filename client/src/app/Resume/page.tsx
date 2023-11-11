@@ -45,7 +45,7 @@ const Page = () => {
       }`}
     >
       <div className=" mb-8 w-[70%] m-auto flex items-center">
-        <span className="text-[42px] font-sans font-semibold">Resume</span>{" "}
+        <span className="text-[42px] font-semibold">Resume</span>{" "}
         <span className="ml-2 mt-3">
           <Link
             href="https://drive.google.com/file/d/1ipqAHP9C7jgAr_6r2H3LY6YvaAIMs8Uy/view?pli=1"
