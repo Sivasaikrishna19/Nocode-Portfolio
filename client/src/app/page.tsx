@@ -1,9 +1,9 @@
 "use client";
 import axios from "axios";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Home() {
   const BASE_URL = "https://3d94bf35-a344-44db-9971-ae31be2d1a86.mock.pstmn.io";
@@ -47,10 +47,13 @@ export default function Home() {
     >
       <div className="w-[80%] m-auto  flex h-[85vh]">
         <div className="w-[50%]  flex">
-          <img
-            src={about?.img}
-            alt="Project Image"
-            className="object-cover w-[480px] h-[480px] rounded-full m-auto"
+          <Image
+            alt="Avatar Image"
+            src={"/ReadyPlayerMe-Avatar.png"}
+            width={550}
+            height={550}
+            loading={"lazy"}
+            className="rounded-full"
           />
         </div>
 
